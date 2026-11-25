@@ -167,6 +167,23 @@ The application validates patient information, including:
 
 Backend validation is also implemented to reject invalid data.
 
+## Live Application
+
+Frontend: https://patient-admission-management-rose.vercel.app
+
+Backend API: https://patient-admission-management-pc3h.onrender.com/api/patients
+
+## Application Screenshots
+
+### 1. Dashboard
+![Dashboard](ScreenShot/dashboard.png)
+
+### 2. Patient Records
+![Patient Records](ScreenShot/Patient.png)
+
+### 3. Admissions
+![Admissions](ScreenShot/Admission.png)
+
 ## Author
 
 Disha G U
