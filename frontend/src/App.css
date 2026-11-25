@@ -568,96 +568,78 @@ td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-/*mobile view*/
+
+/* RESPONSIVE MOBILE LAYOUT */
 @media (max-width: 750px) {
-  .sidebar {
+  .app-container {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+    padding: 15px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .brand {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .sidebar-heading,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    justify-content: flex-start;
   }
 
   .main-content {
+    width: 100%;
+    min-width: 0;
     padding: 15px;
+    overflow-x: hidden;
   }
 
-  .stats-grid {
-    grid-template-columns: 1fr;
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .breadcrumb {
+    max-width: 65%;
+    overflow-wrap: anywhere;
   }
 
   .welcome-banner {
+    width: 100%;
+    padding: 20px;
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px;
   }
 
   .welcome-banner h1 {
     font-size: 22px;
+    overflow-wrap: anywhere;
   }
 
-  .filters {
-    grid-template-columns: 1fr;
+  .welcome-banner p {
+    line-height: 1.5;
   }
 
-  .records-card {
-    padding: 15px;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .modal {
-    padding: 20px;
-  }
-}
-
-/* MOBILE RESPONSIVE FIX */
-@media (max-width: 750px) {
-  .app-container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .sidebar {
-    width: 100%;
-    min-width: 0;
-    padding: 15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .brand {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
-  .sidebar-heading,
-  .sidebar-bottom {
-    display: none;
-  }
-
-  .nav-item {
-    flex: 1 1 30%;
-    justify-content: center;
-    margin: 0;
-    padding: 12px 5px;
-    font-size: 12px;
-  }
-
-  .main-content {
-    width: 100%;
-    min-width: 0;
-    padding: 15px;
-  }
-
-  .topbar {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .welcome-banner {
-    width: 100%;
-    padding: 20px;
+  .primary-button {
+    max-width: 100%;
+    white-space: normal;
   }
 
   .stats-grid {
@@ -670,6 +652,7 @@ td {
 
   .records-card {
     width: 100%;
+    min-width: 0;
     padding: 15px;
   }
 
@@ -678,7 +661,7 @@ td {
   }
 
   .table-wrapper {
-    max-width: 100%;
+    width: 100%;
     overflow-x: auto;
   }
 
@@ -692,93 +675,7 @@ td {
 
   .modal {
     width: 100%;
-    padding: 18px;
-  }
-}
-
-/* MOBILE RESPONSIVE FIX */
-@media (max-width: 750px) {
-  .app-container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .sidebar {
-    width: 100%;
-    min-width: 0;
-    padding: 15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .brand {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
-  .sidebar-heading,
-  .sidebar-bottom {
-    display: none;
-  }
-
-  .nav-item {
-    flex: 1 1 30%;
-    justify-content: center;
-    margin: 0;
-    padding: 12px 5px;
-    font-size: 12px;
-  }
-
-  .main-content {
-    width: 100%;
-    min-width: 0;
-    padding: 15px;
-  }
-
-  .topbar {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .welcome-banner {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .filters {
-    grid-template-columns: 1fr;
-  }
-
-  .records-card {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .records-header {
-    flex-wrap: wrap;
-  }
-
-  .table-wrapper {
     max-width: 100%;
-    overflow-x: auto;
-  }
-
-  table {
-    min-width: 900px;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .modal {
-    width: 100%;
     padding: 18px;
   }
 }
@@ -794,38 +691,5 @@ td {
 
   .records-header h2 {
     font-size: 19px;
-  }
-
-  .nav-item {
-    font-size: 11px;
-  }
-}
-@media (max-width: 750px) {
-  .app-container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    min-height: auto;
-    height: auto;
-  }
-
-  .main-content {
-    width: 100%;
-    min-width: 0;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  .welcome-banner {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .records-card {
-    width: 100%;
-    overflow-x: auto;
-    box-sizing: border-box;
   }
 }
