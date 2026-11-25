@@ -608,3 +608,224 @@ td {
     padding: 20px;
   }
 }
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 750px) {
+  .app-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .sidebar-heading,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .nav-item {
+    flex: 1 1 30%;
+    justify-content: center;
+    margin: 0;
+    padding: 12px 5px;
+    font-size: 12px;
+  }
+
+  .main-content {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .welcome-banner {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .records-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .records-header {
+    flex-wrap: wrap;
+  }
+
+  .table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 900px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+    width: 100%;
+    padding: 18px;
+  }
+}
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 750px) {
+  .app-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .sidebar-heading,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .nav-item {
+    flex: 1 1 30%;
+    justify-content: center;
+    margin: 0;
+    padding: 12px 5px;
+    font-size: 12px;
+  }
+
+  .main-content {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .welcome-banner {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .records-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .records-header {
+    flex-wrap: wrap;
+  }
+
+  .table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 900px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+    width: 100%;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  .welcome-banner h1 {
+    font-size: 19px;
+  }
+
+  .records-header h2 {
+    font-size: 19px;
+  }
+
+  .nav-item {
+    font-size: 11px;
+  }
+}
+@media (max-width: 750px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+  }
+
+  .main-content {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .welcome-banner {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .records-card {
+    width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+}
