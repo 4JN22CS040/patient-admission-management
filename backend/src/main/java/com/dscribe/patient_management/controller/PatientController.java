@@ -13,7 +13,9 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/patients")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173",
+"https://patient-admission-management-rose.vercel.app"
+})
 public class PatientController {
 
     private final PatientService patientService;
